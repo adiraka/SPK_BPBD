@@ -8,3 +8,4 @@ D:\sCrypto's Data\PROJECT\SPK_BPBD\SPK_BPBD\obj\Debug\SPK_BPBD.exe
 D:\sCrypto's Data\PROJECT\SPK_BPBD\SPK_BPBD\obj\Debug\SPK_BPBD.xml
 D:\sCrypto's Data\PROJECT\SPK_BPBD\SPK_BPBD\obj\Debug\SPK_BPBD.pdb
 D:\sCrypto's Data\PROJECT\SPK_BPBD\SPK_BPBD\obj\Debug\SPK_BPBD.login.resources
+D:\sCrypto's Data\PROJECT\SPK_BPBD\SPK_BPBD\obj\Debug\SPK_BPBD.exe.licenses
