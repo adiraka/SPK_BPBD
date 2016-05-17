@@ -9,4 +9,8 @@
         NewMDIChild.MdiParent = Me
         NewMDIChild.Show()
     End Sub
+
+    Private Sub TesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TesToolStripMenuItem.Click
+        Me.Close()
+    End Sub
 End Class

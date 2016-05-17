@@ -56,7 +56,7 @@ Partial Class main
         'BToolStripMenuItem
         '
         Me.BToolStripMenuItem.Name = "BToolStripMenuItem"
-        Me.BToolStripMenuItem.Size = New System.Drawing.Size(152, 22)
+        Me.BToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
         Me.BToolStripMenuItem.Text = "b"
         '
         'CToolStripMenuItem
@@ -68,7 +68,7 @@ Partial Class main
         '
         Me.TesToolStripMenuItem.Name = "TesToolStripMenuItem"
         Me.TesToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
-        Me.TesToolStripMenuItem.Text = "tes"
+        Me.TesToolStripMenuItem.Text = "Keluar"
         '
         'EditToolStripMenuItem
         '
