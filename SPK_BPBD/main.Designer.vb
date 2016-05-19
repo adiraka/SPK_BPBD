@@ -57,7 +57,7 @@ Partial Class main
         '
         Me.BToolStripMenuItem.Name = "BToolStripMenuItem"
         Me.BToolStripMenuItem.Size = New System.Drawing.Size(184, 22)
-        Me.BToolStripMenuItem.Text = "b"
+        Me.BToolStripMenuItem.Text = "Lihat Data Pemohon"
         '
         'CToolStripMenuItem
         '

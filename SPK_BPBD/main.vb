@@ -13,4 +13,10 @@
     Private Sub TesToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TesToolStripMenuItem.Click
         Me.Close()
     End Sub
+
+    Private Sub BToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BToolStripMenuItem.Click
+        Dim NewMDIChild As New viDataPemohon()
+        NewMDIChild.MdiParent = Me
+        NewMDIChild.Show()
+    End Sub
 End Class

@@ -46,3 +46,4 @@ D:\sCrypto's Data\PROJECT\SPK_BPBD\SPK_BPBD\bin\Debug\DevExpress.CodeRush.UserCo
 D:\sCrypto's Data\PROJECT\SPK_BPBD\SPK_BPBD\bin\Debug\DevExpress.DXCore.Parser.xml
 D:\sCrypto's Data\PROJECT\SPK_BPBD\SPK_BPBD\bin\Debug\DevExpress.CodeRush.VSCore.xml
 D:\sCrypto's Data\PROJECT\SPK_BPBD\SPK_BPBD\bin\Debug\DevExpress.DXCore.MetaData.xml
+D:\sCrypto's Data\PROJECT\SPK_BPBD\SPK_BPBD\obj\Debug\SPK_BPBD.viDataPemohon.resources

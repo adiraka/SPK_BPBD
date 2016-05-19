@@ -44,7 +44,6 @@ Partial Class inDataPemohon
         Me.vstat = New System.Windows.Forms.ComboBox()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.vpekerjaan = New System.Windows.Forms.ComboBox()
-        Me.vgoldar = New System.Windows.Forms.TextBox()
         Me.Label14 = New System.Windows.Forms.Label()
         Me.vkwn = New System.Windows.Forms.TextBox()
         Me.Label15 = New System.Windows.Forms.Label()
@@ -56,10 +55,12 @@ Partial Class inDataPemohon
         Me.bSimpan = New System.Windows.Forms.Button()
         Me.Aksi = New System.Windows.Forms.GroupBox()
         Me.bBatal = New System.Windows.Forms.Button()
-        Me.DataGridView1 = New System.Windows.Forms.DataGridView()
+        Me.vgoldar = New System.Windows.Forms.ComboBox()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.vagama = New System.Windows.Forms.ComboBox()
+        Me.bData = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Aksi.SuspendLayout()
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -131,6 +132,7 @@ Partial Class inDataPemohon
         '
         'vtgllhr
         '
+        Me.vtgllhr.CustomFormat = ""
         Me.vtgllhr.Location = New System.Drawing.Point(112, 133)
         Me.vtgllhr.Name = "vtgllhr"
         Me.vtgllhr.Size = New System.Drawing.Size(189, 21)
@@ -238,7 +240,7 @@ Partial Class inDataPemohon
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(378, 82)
+        Me.Label12.Location = New System.Drawing.Point(374, 109)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(96, 13)
         Me.Label12.TabIndex = 1
@@ -248,7 +250,7 @@ Partial Class inDataPemohon
         '
         Me.vstat.FormattingEnabled = True
         Me.vstat.Items.AddRange(New Object() {"KAWIN", "BELUM KAWIN"})
-        Me.vstat.Location = New System.Drawing.Point(494, 79)
+        Me.vstat.Location = New System.Drawing.Point(490, 106)
         Me.vstat.Name = "vstat"
         Me.vstat.Size = New System.Drawing.Size(121, 21)
         Me.vstat.TabIndex = 4
@@ -256,7 +258,7 @@ Partial Class inDataPemohon
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(378, 109)
+        Me.Label13.Location = New System.Drawing.Point(374, 136)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(55, 13)
         Me.Label13.TabIndex = 1
@@ -266,22 +268,15 @@ Partial Class inDataPemohon
         '
         Me.vpekerjaan.FormattingEnabled = True
         Me.vpekerjaan.Items.AddRange(New Object() {"PELAJAR", "SWASTA", "PNS", "PENSIUNAN"})
-        Me.vpekerjaan.Location = New System.Drawing.Point(494, 106)
+        Me.vpekerjaan.Location = New System.Drawing.Point(490, 133)
         Me.vpekerjaan.Name = "vpekerjaan"
         Me.vpekerjaan.Size = New System.Drawing.Size(121, 21)
         Me.vpekerjaan.TabIndex = 4
         '
-        'vgoldar
-        '
-        Me.vgoldar.Location = New System.Drawing.Point(494, 52)
-        Me.vgoldar.Name = "vgoldar"
-        Me.vgoldar.Size = New System.Drawing.Size(189, 21)
-        Me.vgoldar.TabIndex = 2
-        '
         'Label14
         '
         Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(378, 55)
+        Me.Label14.Location = New System.Drawing.Point(374, 82)
         Me.Label14.Name = "Label14"
         Me.Label14.Size = New System.Drawing.Size(84, 13)
         Me.Label14.TabIndex = 1
@@ -289,7 +284,7 @@ Partial Class inDataPemohon
         '
         'vkwn
         '
-        Me.vkwn.Location = New System.Drawing.Point(494, 133)
+        Me.vkwn.Location = New System.Drawing.Point(490, 160)
         Me.vkwn.Name = "vkwn"
         Me.vkwn.Size = New System.Drawing.Size(189, 21)
         Me.vkwn.TabIndex = 2
@@ -297,7 +292,7 @@ Partial Class inDataPemohon
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(378, 136)
+        Me.Label15.Location = New System.Drawing.Point(374, 163)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(95, 13)
         Me.Label15.TabIndex = 1
@@ -309,16 +304,16 @@ Partial Class inDataPemohon
         '
         'PictureBox1
         '
-        Me.PictureBox1.Location = New System.Drawing.Point(494, 191)
+        Me.PictureBox1.Location = New System.Drawing.Point(494, 214)
         Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(189, 163)
+        Me.PictureBox1.Size = New System.Drawing.Size(189, 140)
         Me.PictureBox1.TabIndex = 8
         Me.PictureBox1.TabStop = False
         '
         'Label16
         '
         Me.Label16.AutoSize = True
-        Me.Label16.Location = New System.Drawing.Point(378, 163)
+        Me.Label16.Location = New System.Drawing.Point(374, 190)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(29, 13)
         Me.Label16.TabIndex = 1
@@ -327,7 +322,7 @@ Partial Class inDataPemohon
         'bCari
         '
         Me.bCari.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.bCari.Location = New System.Drawing.Point(494, 158)
+        Me.bCari.Location = New System.Drawing.Point(490, 185)
         Me.bCari.Name = "bCari"
         Me.bCari.Size = New System.Drawing.Size(48, 23)
         Me.bCari.TabIndex = 9
@@ -337,7 +332,7 @@ Partial Class inDataPemohon
         'TextBox10
         '
         Me.TextBox10.Enabled = False
-        Me.TextBox10.Location = New System.Drawing.Point(548, 158)
+        Me.TextBox10.Location = New System.Drawing.Point(544, 185)
         Me.TextBox10.Name = "TextBox10"
         Me.TextBox10.ReadOnly = True
         Me.TextBox10.Size = New System.Drawing.Size(135, 21)
@@ -355,32 +350,61 @@ Partial Class inDataPemohon
         '
         'Aksi
         '
+        Me.Aksi.Controls.Add(Me.bData)
         Me.Aksi.Controls.Add(Me.bBatal)
         Me.Aksi.Controls.Add(Me.bSimpan)
-        Me.Aksi.Location = New System.Drawing.Point(720, 52)
+        Me.Aksi.Location = New System.Drawing.Point(720, 12)
         Me.Aksi.Name = "Aksi"
-        Me.Aksi.Size = New System.Drawing.Size(110, 302)
+        Me.Aksi.Size = New System.Drawing.Size(110, 342)
         Me.Aksi.TabIndex = 12
         Me.Aksi.TabStop = False
-        Me.Aksi.Text = "Aksi"
         '
         'bBatal
         '
         Me.bBatal.DialogResult = System.Windows.Forms.DialogResult.Cancel
-        Me.bBatal.Location = New System.Drawing.Point(6, 59)
+        Me.bBatal.Location = New System.Drawing.Point(6, 98)
         Me.bBatal.Name = "bBatal"
         Me.bBatal.Size = New System.Drawing.Size(98, 33)
         Me.bBatal.TabIndex = 11
         Me.bBatal.Text = "BATAL"
         Me.bBatal.UseVisualStyleBackColor = True
         '
-        'DataGridView1
+        'vgoldar
         '
-        Me.DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.DataGridView1.Location = New System.Drawing.Point(16, 377)
-        Me.DataGridView1.Name = "DataGridView1"
-        Me.DataGridView1.Size = New System.Drawing.Size(814, 77)
-        Me.DataGridView1.TabIndex = 13
+        Me.vgoldar.FormattingEnabled = True
+        Me.vgoldar.Items.AddRange(New Object() {"A", "B", "AB", "O"})
+        Me.vgoldar.Location = New System.Drawing.Point(490, 76)
+        Me.vgoldar.Name = "vgoldar"
+        Me.vgoldar.Size = New System.Drawing.Size(121, 21)
+        Me.vgoldar.TabIndex = 4
+        '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.Location = New System.Drawing.Point(374, 55)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(40, 13)
+        Me.Label18.TabIndex = 1
+        Me.Label18.Text = "Agama"
+        '
+        'vagama
+        '
+        Me.vagama.FormattingEnabled = True
+        Me.vagama.Items.AddRange(New Object() {"ISLAM", "KATOLIK", "PROTESTAN", "HINDU", "BUDDHA", "KONGHUCU"})
+        Me.vagama.Location = New System.Drawing.Point(490, 49)
+        Me.vagama.Name = "vagama"
+        Me.vagama.Size = New System.Drawing.Size(121, 21)
+        Me.vagama.TabIndex = 4
+        '
+        'bData
+        '
+        Me.bData.DialogResult = System.Windows.Forms.DialogResult.Cancel
+        Me.bData.Location = New System.Drawing.Point(6, 59)
+        Me.bData.Name = "bData"
+        Me.bData.Size = New System.Drawing.Size(98, 33)
+        Me.bData.TabIndex = 11
+        Me.bData.Text = "ALL DATA"
+        Me.bData.UseVisualStyleBackColor = True
         '
         'inDataPemohon
         '
@@ -388,9 +412,7 @@ Partial Class inDataPemohon
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.AutoSize = True
-        Me.ClientSize = New System.Drawing.Size(866, 424)
-        Me.ControlBox = False
-        Me.Controls.Add(Me.DataGridView1)
+        Me.ClientSize = New System.Drawing.Size(866, 374)
         Me.Controls.Add(Me.Aksi)
         Me.Controls.Add(Me.bCari)
         Me.Controls.Add(Me.PictureBox1)
@@ -401,12 +423,13 @@ Partial Class inDataPemohon
         Me.Controls.Add(Me.vrt)
         Me.Controls.Add(Me.valamat)
         Me.Controls.Add(Me.vpekerjaan)
+        Me.Controls.Add(Me.vagama)
+        Me.Controls.Add(Me.vgoldar)
         Me.Controls.Add(Me.vstat)
         Me.Controls.Add(Me.vjekel)
         Me.Controls.Add(Me.vtgllhr)
         Me.Controls.Add(Me.vtmpt)
         Me.Controls.Add(Me.vnama)
-        Me.Controls.Add(Me.vgoldar)
         Me.Controls.Add(Me.vkwn)
         Me.Controls.Add(Me.vnik)
         Me.Controls.Add(Me.Label9)
@@ -414,6 +437,7 @@ Partial Class inDataPemohon
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.Label18)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Label14)
         Me.Controls.Add(Me.Label12)
@@ -426,11 +450,10 @@ Partial Class inDataPemohon
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Name = "inDataPemohon"
-        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Input Data Pemohon"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.Aksi.ResumeLayout(False)
-        CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -460,7 +483,6 @@ Partial Class inDataPemohon
     Friend WithEvents vstat As System.Windows.Forms.ComboBox
     Friend WithEvents Label13 As System.Windows.Forms.Label
     Friend WithEvents vpekerjaan As System.Windows.Forms.ComboBox
-    Friend WithEvents vgoldar As System.Windows.Forms.TextBox
     Friend WithEvents Label14 As System.Windows.Forms.Label
     Friend WithEvents vkwn As System.Windows.Forms.TextBox
     Friend WithEvents Label15 As System.Windows.Forms.Label
@@ -472,5 +494,8 @@ Partial Class inDataPemohon
     Friend WithEvents bSimpan As System.Windows.Forms.Button
     Friend WithEvents Aksi As System.Windows.Forms.GroupBox
     Friend WithEvents bBatal As System.Windows.Forms.Button
-    Friend WithEvents DataGridView1 As System.Windows.Forms.DataGridView
+    Friend WithEvents vgoldar As System.Windows.Forms.ComboBox
+    Friend WithEvents Label18 As System.Windows.Forms.Label
+    Friend WithEvents vagama As System.Windows.Forms.ComboBox
+    Friend WithEvents bData As System.Windows.Forms.Button
 End Class
