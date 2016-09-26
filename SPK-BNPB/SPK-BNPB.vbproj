@@ -1,0 +1,371 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9AD94B3D-61B4-4EE1-8DF0-9E6A6DB15C93}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>SPK_BNPB.My.MyApplication</StartupObject>
+    <RootNamespace>SPK_BNPB</RootNamespace>
+    <AssemblyName>SPK-BNPB</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>D:\SCRYPTO\TestPublish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>SPK-BNPB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>SPK-BNPB.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>5C1E6941346083860A7F7FAB03705943C6A5B5FC</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>SPK-BNPB_1_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.2000.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL" />
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="MySql.Data, Version=6.9.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="admin.Designer.vb">
+      <DependentUpon>admin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="admin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="analisaPemohon.Designer.vb">
+      <DependentUpon>analisaPemohon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="analisaPemohon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dataPemohon.Designer.vb">
+      <DependentUpon>dataPemohon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="dataPemohon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="enumerator.Designer.vb">
+      <DependentUpon>enumerator.vb</DependentUpon>
+    </Compile>
+    <Compile Include="enumerator.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Koneksi.vb" />
+    <Compile Include="laporan.Designer.vb">
+      <DependentUpon>laporan.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporan.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporanAdmin.Designer.vb">
+      <DependentUpon>laporanAdmin.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporanAdmin.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporanAdminCrystal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporanAdminCrystal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporanAnalisa.Designer.vb">
+      <DependentUpon>laporanAnalisa.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporanAnalisa.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporanAnalisaCrystal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporanAnalisaCrystal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporanPemohon.Designer.vb">
+      <DependentUpon>laporanPemohon.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporanPemohon.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporanPemohonCrystal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporanPemohonCrystal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="laporanSurveyor.Designer.vb">
+      <DependentUpon>laporanSurveyor.vb</DependentUpon>
+    </Compile>
+    <Compile Include="laporanSurveyor.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="laporanSurveyorCrystal.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>laporanSurveyorCrystal.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="login.Designer.vb">
+      <DependentUpon>login.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.vb">
+      <DependentUpon>main.vb</DependentUpon>
+    </Compile>
+    <Compile Include="main.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="analisaPemohon.resx">
+      <DependentUpon>analisaPemohon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dataPemohon.resx">
+      <DependentUpon>dataPemohon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="enumerator.resx">
+      <DependentUpon>enumerator.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporan.resx">
+      <DependentUpon>laporan.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanAdmin.resx">
+      <DependentUpon>laporanAdmin.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanAdminCrystal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporanAdminCrystal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanAnalisa.resx">
+      <DependentUpon>laporanAnalisa.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanAnalisaCrystal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporanAnalisaCrystal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanPemohon.resx">
+      <DependentUpon>laporanPemohon.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanPemohonCrystal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporanPemohonCrystal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanSurveyor.resx">
+      <DependentUpon>laporanSurveyor.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="laporanSurveyorCrystal.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>laporanSurveyorCrystal.vb</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="login.resx">
+      <DependentUpon>login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+    <None Include="SPK-BNPB_1_TemporaryKey.pfx" />
+    <None Include="SPK-BNPB_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\texture-green-paper-pattern-scratch-background-photo-hd-wallpaper.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Paomedia-Small-N-Flat-Sign-check.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo BNPB.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Group-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Files-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Turn-On-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Button-Close-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Save-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-validated-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete-file-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Actions-dialog-cancel-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\process-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Reports-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\User-Executive-Green-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\BPBD SOLOK.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Admin-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\SEO-icon.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
