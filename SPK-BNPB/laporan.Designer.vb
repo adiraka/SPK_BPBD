@@ -29,6 +29,7 @@ Partial Class laporan
         Me.tbview = New System.Windows.Forms.DataGridView()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.vkrit = New System.Windows.Forms.TextBox()
         CType(Me.tbview, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -94,12 +95,21 @@ Partial Class laporan
         Me.Button3.TabIndex = 35
         Me.Button3.UseVisualStyleBackColor = False
         '
+        'vkrit
+        '
+        Me.vkrit.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.vkrit.Location = New System.Drawing.Point(425, 17)
+        Me.vkrit.Name = "vkrit"
+        Me.vkrit.Size = New System.Drawing.Size(173, 26)
+        Me.vkrit.TabIndex = 36
+        '
         'laporan
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImage = Global.SPK_BNPB.My.Resources.Resources.texture_green_paper_pattern_scratch_background_photo_hd_wallpaper
         Me.ClientSize = New System.Drawing.Size(877, 471)
+        Me.Controls.Add(Me.vkrit)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.tbview)
@@ -120,4 +130,5 @@ Partial Class laporan
     Friend WithEvents tbview As System.Windows.Forms.DataGridView
     Friend WithEvents Button1 As System.Windows.Forms.Button
     Friend WithEvents Button3 As System.Windows.Forms.Button
+    Friend WithEvents vkrit As System.Windows.Forms.TextBox
 End Class

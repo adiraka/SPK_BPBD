@@ -147,14 +147,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SPK-BNPB.exe" size="12320768">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SPK-BNPB.exe" size="12322304">
       <assemblyIdentity name="SPK-BNPB" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>AqvdlFCTZCiU+f2E6n71ddTM6MbNC8/cOxXVHJgQysU=</dsig:DigestValue>
+        <dsig:DigestValue>+yr0A8Q1ggok82odk+j1DtivrrMEEgLbHWKfsVPXZuQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

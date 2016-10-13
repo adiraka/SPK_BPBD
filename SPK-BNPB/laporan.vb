@@ -8,7 +8,7 @@ Public Class laporan
     Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
         If vcari.Text = "Data Pemohon" Then
             Try
-                sql = "SELECT * FROM pemohon"
+                sql = "SELECT * FROM pemohon WHERE (pemohon.nik LIKE '%" & vkrit.Text & "%' OR pemohon.nama LIKE '%" & vkrit.Text & "%')"
                 tabel = proses.ExecuteQuery(sql)
                 Me.tbview.DataSource = tabel
                 With Me.tbview
@@ -38,7 +38,12 @@ Public Class laporan
                         "analisa.kj, analisa.kr, analisa.ss, analisa.tb, analisa.ha, analisa.stat " &
                         "FROM pemohon, surveyor, analisa " &
                         "WHERE pemohon.nik = analisa.nik " &
-                        "AND surveyor.nip = analisa.nip "
+                        "AND surveyor.nip = analisa.nip " &
+                        "AND (analisa.id LIKE '%" & vkrit.Text & "%'" &
+                        "OR pemohon.nik LIKE '%" & vkrit.Text & "%'" &
+                        "OR pemohon.nama LIKE '%" & vkrit.Text & "%'" &
+                        "OR surveyor.nip LIKE '%" & vkrit.Text & "%'" &
+                        "OR surveyor.nama LIKE '%" & vkrit.Text & "%')"
                 tabel = proses.ExecuteQuery(sql)
                 Me.tbview.DataSource = tabel
                 With Me.tbview
@@ -60,7 +65,7 @@ Public Class laporan
             End Try
         ElseIf vcari.Text = "Data Surveyor" Then
             Try
-                sql = "SELECT * FROM surveyor"
+                sql = "SELECT * FROM surveyor WHERE (surveyor.nip LIKE '%" & vkrit.Text & "%' OR surveyor.nama LIKE '%" & vkrit.Text & "%')"
                 tabel = proses.ExecuteQuery(sql)
                 Me.tbview.DataSource = tabel
                 With Me.tbview
@@ -81,7 +86,10 @@ Public Class laporan
                 sql = "SELECT user_akun.nip, user_akun.username, user_info.nama, user_info.tmp_lhr, user_info.tgl_lhr," &
                         "user_info.tgl_lhr, user_info.jekel, user_info.alamat, user_info.agama, user_info.telepon, user_info.jabatan " &
                         "FROM user_akun, user_info " &
-                        "WHERE user_akun.nip = user_info.nip "
+                        "WHERE user_akun.nip = user_info.nip " &
+                        "AND (user_akun.nip LIKE '%" & vkrit.Text & "%'" &
+                        "OR user_akun.username LIKE '%" & vkrit.Text & "%'" &
+                        "OR user_info.nama LIKE '%" & vkrit.Text & "%')"
                 tabel = proses.ExecuteQuery(sql)
                 Me.tbview.DataSource = tabel
                 With Me.tbview
